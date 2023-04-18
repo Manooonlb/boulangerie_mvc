@@ -1,0 +1,7 @@
+{% extends 'layout.html.twig' %}
+
+    {% block title %}{{commande.title}}{% endblock %}
+    {# {% block content %}<h1>Bienvenue à la Boulangerie! vous avez commandé...</h1>{% endblock %} #}
+    {% block content %}
+    <h1>Bienvenue à la Boulangerie! vous avez commandé {{quantity}} {{commande.title}} pour un montant de ({{commande.prix * quantity}}) euros, c'est {{commande.description}}</h1>
+    {% endblock %}
